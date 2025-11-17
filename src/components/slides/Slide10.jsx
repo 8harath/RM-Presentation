@@ -86,7 +86,7 @@ const Slide10 = () => {
           </div>
 
           {/* Future */}
-          <div className="content-box bg-brutal-gray-light">
+          <div className="content-box bg-brutal-black text-brutal-white">
             <h3 className="text-xl font-bold mb-3 text-center">THE FUTURE</h3>
             <div className="text-center text-lg font-bold">
               Human-Centered AI

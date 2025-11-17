@@ -29,7 +29,7 @@ const Slide7 = () => {
               <td className="font-bold">Worldcoin</td>
               <td>⚫ High</td>
               <td>⚫ High</td>
-              <td className="text-red-700 font-bold">🔴 Very High</td>
+              <td className="font-bold">⬤ Very High</td>
               <td>Invalid consent</td>
             </tr>
             <tr>
@@ -43,7 +43,7 @@ const Slide7 = () => {
               <td className="font-bold">Behavioral</td>
               <td>⚫ Very High</td>
               <td>⚫ High</td>
-              <td className="text-red-700 font-bold">🔴 Very High</td>
+              <td className="font-bold">⬤ Very High</td>
               <td>Sub-perceptual surveillance</td>
             </tr>
             <tr>
@@ -60,7 +60,7 @@ const Slide7 = () => {
         <div className="mt-4 flex gap-6 text-lg justify-center border-t-3 border-brutal-black pt-4">
           <div><span className="font-bold">⚫</span> High/Good</div>
           <div><span className="font-bold">⚪</span> Medium</div>
-          <div><span className="font-bold text-red-700">🔴</span> Critical Risk</div>
+          <div><span className="font-bold">⬤</span> Critical Risk</div>
         </div>
       </div>
 
@@ -76,7 +76,7 @@ const Slide7 = () => {
           </div>
         </div>
 
-        <div className="content-box bg-brutal-gray-light">
+        <div className="content-box bg-brutal-black text-brutal-white">
           <h3 className="text-xl font-bold mb-3 underline">KEY FINDINGS</h3>
           <div className="space-y-2">
             <div className="bullet-point">No methodology optimizes all three dimensions</div>

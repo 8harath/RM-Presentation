@@ -66,8 +66,8 @@ const Slide8 = () => {
           </div>
 
           {/* Trade-off 2 */}
-          <div className="content-box bg-red-100 border-red-700">
-            <h3 className="text-lg font-bold mb-2">VERIFICATION + USABILITY</h3>
+          <div className="content-box border-5">
+            <h3 className="text-lg font-bold mb-2">⚠ VERIFICATION + USABILITY</h3>
             <div className="text-base">
               <strong>Result:</strong> Lost Freewill
               <br />
@@ -90,7 +90,7 @@ const Slide8 = () => {
           </div>
 
           {/* Validation */}
-          <div className="content-box bg-brutal-gray-light">
+          <div className="content-box bg-brutal-black text-brutal-white">
             <h3 className="text-lg font-bold mb-2">EMPIRICAL VALIDATION</h3>
             <div className="text-base">
               Worldcoin pursued Verification + Usability
