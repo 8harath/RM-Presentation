@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', 'Space Grotesk', 'Arial Black', sans-serif;
+    background: #000000;
+    color: #000000;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  /* Neo-Brutalism Core Styles */
+  .slide-container {
+    @apply bg-brutal-white border-5 border-brutal-black shadow-brutal;
+  }
+
+  .content-box {
+    @apply bg-brutal-white border-4 border-brutal-black p-6;
+  }
+
+  .content-box-sm {
+    @apply bg-brutal-white border-3 border-brutal-black p-4;
+  }
+
+  .slide-title {
+    @apply text-slide-title font-black uppercase border-b-6 border-brutal-black pb-3 mb-6;
+  }
+
+  .slide-subtitle {
+    @apply text-slide-subtitle font-bold mb-4;
+  }
+
+  .slide-body {
+    @apply text-slide-body;
+  }
+
+  .bullet-point {
+    @apply relative pl-6 mb-2;
+  }
+
+  .bullet-point::before {
+    content: "■";
+    @apply absolute left-0 font-bold text-brutal-black;
+  }
+
+  .table-brutalist {
+    @apply border-3 border-brutal-black w-full;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .table-brutalist th,
+  .table-brutalist td {
+    @apply border-2 border-brutal-black p-3 text-left;
+  }
+
+  .table-brutalist th {
+    @apply font-bold bg-brutal-gray-light;
+  }
+
+  /* Navigation Buttons */
+  .nav-button {
+    @apply bg-brutal-white border-4 border-brutal-black px-6 py-3 font-bold uppercase cursor-pointer transition-all duration-200 hover:shadow-brutal-sm active:translate-x-1 active:translate-y-1 active:shadow-none;
+  }
+
+  /* Slide Counter */
+  .slide-counter {
+    @apply bg-brutal-black text-brutal-white px-4 py-2 font-mono font-bold;
+  }
+}
+
+/* Animation utilities */
+@layer utilities {
+  .animate-slide-in-left {
+    animation: slideInLeft 0.2s ease-out;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.2s ease-out;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
