@@ -55,7 +55,7 @@ const Slide11 = () => {
           </div>
 
           {/* Q&A Section */}
-          <div className="content-box flex-1 flex flex-col justify-center items-center bg-brutal-gray-light">
+          <div className="content-box flex-1 flex flex-col justify-center items-center bg-brutal-white">
             <div className="text-6xl font-black mb-6">Q & A</div>
             <div className="text-2xl font-bold text-center">
               QUESTIONS & DISCUSSION

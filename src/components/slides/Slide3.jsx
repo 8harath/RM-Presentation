@@ -29,7 +29,7 @@ const Slide3 = () => {
         </div>
 
         {/* Central Tension */}
-        <div className="content-box bg-brutal-gray-light">
+        <div className="content-box bg-brutal-black text-brutal-white">
           <h3 className="text-xl font-bold mb-3 underline">CENTRAL TENSION</h3>
           <div className="space-y-4 text-lg">
             <div className="text-center">

@@ -64,7 +64,7 @@
   }
 
   .table-brutalist th {
-    @apply font-bold bg-brutal-gray-light;
+    @apply font-bold bg-brutal-white;
   }
 
   /* Navigation Buttons */

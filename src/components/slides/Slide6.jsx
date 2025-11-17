@@ -14,8 +14,8 @@ const Slide6 = () => {
               <p className="text-base mb-2">Statistical fingerprinting using probability curvature analysis</p>
             </div>
             <div className="flex gap-4 text-base">
-              <span className="text-green-700">✓ No training data needed</span>
-              <span className="text-red-700">✗ Adversarial evasion</span>
+              <span className="font-bold">✓ No training data needed</span>
+              <span className="font-bold">✗ Adversarial evasion</span>
             </div>
           </div>
         </div>
@@ -28,8 +28,8 @@ const Slide6 = () => {
               <p className="text-base mb-2">Cognitive-perceptual human tests</p>
             </div>
             <div className="flex gap-4 text-base">
-              <span className="text-green-700">✓ Simple, widely deployed</span>
-              <span className="text-red-700">✗ High friction, accessibility issues</span>
+              <span className="font-bold">✓ Simple, widely deployed</span>
+              <span className="font-bold">✗ High friction, accessibility issues</span>
             </div>
           </div>
         </div>
@@ -42,8 +42,8 @@ const Slide6 = () => {
               <p className="text-base mb-2">Custom "Orb" hardware captures iris patterns with zero-knowledge proofs</p>
             </div>
             <div className="flex gap-4 text-base">
-              <span className="text-green-700">✓ High accuracy, AI-safe</span>
-              <span className="text-red-700">✗ Privacy violations, coercive incentives</span>
+              <span className="font-bold">✓ High accuracy, AI-safe</span>
+              <span className="font-bold">✗ Privacy violations, coercive incentives</span>
             </div>
           </div>
         </div>
@@ -56,8 +56,8 @@ const Slide6 = () => {
               <p className="text-base mb-2">Typing rhythm, mouse patterns, touchscreen pressure - continuous monitoring</p>
             </div>
             <div className="flex gap-4 text-base">
-              <span className="text-green-700">✓ Seamless, invisible to user</span>
-              <span className="text-red-700">✗ Total surveillance, sub-perceptual control</span>
+              <span className="font-bold">✓ Seamless, invisible to user</span>
+              <span className="font-bold">✗ Total surveillance, sub-perceptual control</span>
             </div>
           </div>
         </div>

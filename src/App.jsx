@@ -67,21 +67,27 @@ function App() {
     enter: (direction) => ({
       x: direction > 0 ? '100%' : '-100%',
       opacity: 0,
+      scale: 0.95,
+      rotateY: direction > 0 ? 5 : -5,
     }),
     center: {
       x: 0,
       opacity: 1,
+      scale: 1,
+      rotateY: 0,
     },
     exit: (direction) => ({
       x: direction > 0 ? '-100%' : '100%',
       opacity: 0,
+      scale: 0.95,
+      rotateY: direction > 0 ? -5 : 5,
     }),
   }
 
   return (
-    <div className="w-screen h-screen bg-brutal-black p-8 flex flex-col">
+    <div className="w-screen h-screen bg-brutal-black p-6">
       {/* Slide Container */}
-      <div className="flex-1 relative overflow-hidden">
+      <div className="h-full relative overflow-hidden">
         <AnimatePresence initial={false} custom={direction} mode="wait">
           <motion.div
             key={currentSlide}
@@ -91,60 +97,18 @@ function App() {
             animate="center"
             exit="exit"
             transition={{
-              x: { type: 'tween', duration: 0.2, ease: 'easeOut' },
-              opacity: { duration: 0.2 },
+              x: { type: 'spring', stiffness: 300, damping: 30 },
+              opacity: { duration: 0.3 },
+              scale: { duration: 0.3, ease: 'easeInOut' },
+              rotateY: { duration: 0.3, ease: 'easeInOut' },
             }}
             className="absolute inset-0"
           >
-            <div className="slide-container h-full w-full p-12 overflow-auto">
+            <div className="slide-container h-full w-full p-8 overflow-auto">
               <CurrentSlideComponent />
             </div>
           </motion.div>
         </AnimatePresence>
-      </div>
-
-      {/* Navigation Controls */}
-      <div className="flex justify-between items-center mt-6">
-        <button
-          onClick={prevSlide}
-          disabled={currentSlide === 0}
-          className={`nav-button ${currentSlide === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
-        >
-          ← Previous
-        </button>
-
-        <div className="flex items-center gap-4">
-          <div className="slide-counter">
-            {String(currentSlide + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
-          </div>
-
-          {/* Slide Dots */}
-          <div className="flex gap-2">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-3 h-3 border-2 border-brutal-black transition-all ${
-                  index === currentSlide ? 'bg-brutal-black' : 'bg-brutal-white'
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-
-        <button
-          onClick={nextSlide}
-          disabled={currentSlide === slides.length - 1}
-          className={`nav-button ${currentSlide === slides.length - 1 ? 'opacity-50 cursor-not-allowed' : ''}`}
-        >
-          Next →
-        </button>
-      </div>
-
-      {/* Keyboard Hints */}
-      <div className="text-brutal-white text-xs text-center mt-2 font-mono">
-        Use ← → arrow keys or Space to navigate | Press 1-9 for quick slide access
       </div>
     </div>
   )
