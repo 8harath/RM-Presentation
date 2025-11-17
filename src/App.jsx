@@ -111,7 +111,7 @@ function App() {
         </AnimatePresence>
 
         {/* Slide Counter - Neobrutalism Style */}
-        <div className="absolute bottom-8 right-8 slide-counter">
+        <div className="absolute top-8 right-8 slide-counter">
           {currentSlide + 1}/{slides.length}
         </div>
       </div>
