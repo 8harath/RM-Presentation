@@ -10,7 +10,6 @@ const Slide9 = () => {
         <div className="space-y-4">
           <h3 className="text-2xl font-bold mb-4">CRITICAL RESEARCH GAPS IDENTIFIED</h3>
 
-          {/* Gap 1 */}
           <div className="content-box">
             <div className="flex items-start gap-3">
               <div className="text-3xl font-black">1</div>
@@ -25,30 +24,28 @@ const Slide9 = () => {
             </div>
           </div>
 
-          {/* Gap 2 */}
           <div className="content-box">
             <div className="flex items-start gap-3">
               <div className="text-3xl font-black">2</div>
               <div>
                 <h4 className="text-xl font-bold mb-2">Algorithmic-Age Consent Frameworks</h4>
                 <div className="text-base space-y-1">
-                  <div><strong>Challenge:</strong> 20th-century consent laws inadequate</div>
+                  <div><strong>Challenge:</strong> 20th-century consent laws are inadequate</div>
                   <div><strong>Need:</strong> Legal-technical frameworks for sub-perceptual identification</div>
-                  <div><strong>Question:</strong> How to give meaningful consent when algorithms operate below perception?</div>
+                  <div><strong>Question:</strong> How to ensure consent is genuinely informed and voluntary?</div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Gap 3 */}
           <div className="content-box">
             <div className="flex items-start gap-3">
               <div className="text-3xl font-black">3</div>
               <div>
                 <h4 className="text-xl font-bold mb-2">Collaboration as Differentiation</h4>
                 <div className="text-base space-y-1">
-                  <div><strong>Challenge:</strong> Current focus on building walls between humans and AI</div>
-                  <div><strong>Need:</strong> Study Human-in-the-loop processes as locus of differentiation</div>
+                  <div><strong>Challenge:</strong> Current discourse focuses on separating humans and AI</div>
+                  <div><strong>Need:</strong> Study human-in-the-loop collaboration as the key differentiator</div>
                   <div><strong>Shift:</strong> From static verification to dynamic collaborative augmentation</div>
                 </div>
               </div>
@@ -61,7 +58,6 @@ const Slide9 = () => {
           <div className="content-box bg-brutal-black text-brutal-white h-full flex flex-col justify-center">
             <h3 className="text-2xl font-bold mb-6">PROPOSED DIRECTION</h3>
 
-            {/* Paradigm Shift */}
             <div className="space-y-6 text-lg">
               <div className="border-b-3 border-white pb-4">
                 <div className="text-center mb-2 text-base opacity-75">FROM</div>
@@ -69,7 +65,7 @@ const Slide9 = () => {
                 <div className="text-center text-base">(Replacement)</div>
               </div>
 
-              <div className="text-center text-4xl">↓</div>
+              <div className="text-center text-4xl font-black">TO</div>
 
               <div className="border-t-3 border-white pt-4">
                 <div className="text-center mb-2 text-base opacity-75">TO</div>
@@ -79,25 +75,20 @@ const Slide9 = () => {
             </div>
 
             <div className="mt-8 space-y-3 text-base">
-              <div className="bullet-point">Build Human-Centered AI tools</div>
-              <div className="bullet-point">Empower Digital Personhood management</div>
+              <div className="bullet-point">Build human-centered AI tools</div>
+              <div className="bullet-point">Empower digital personhood management</div>
               <div className="bullet-point">Focus on authenticity and quality of life</div>
             </div>
           </div>
 
-          {/* Visual Metaphor */}
           <div className="content-box text-center">
             <div className="text-xl font-bold mb-4">PARADIGM SHIFT</div>
-            <div className="flex justify-around items-center text-5xl">
-              <div>🧱</div>
-              <div className="text-3xl">→</div>
-              <div>🌉</div>
+            <div className="flex justify-around items-center text-xl font-bold">
+              <div className="content-box-sm">WALL</div>
+              <div className="text-3xl">-&gt;</div>
+              <div className="content-box-sm">BRIDGE</div>
             </div>
-            <div className="flex justify-around mt-2 text-sm">
-              <div>Wall</div>
-              <div></div>
-              <div>Bridge</div>
-            </div>
+            <div className="mt-3 text-base">From separation mindset to collaborative ecosystem design</div>
           </div>
         </div>
       </div>
