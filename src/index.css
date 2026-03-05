@@ -78,17 +78,7 @@
   }
 
   .mobile-nav-bar {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 40;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem;
-    background: #000000;
-    border-top: 3px solid #ffffff;
+    @apply flex items-center gap-2 p-2 bg-brutal-black border-t-4 border-brutal-white;
   }
 
   .mobile-nav-status {
