@@ -35,7 +35,7 @@ const Slide1 = () => {
         <div className="text-center">
           <div className="text-2xl font-bold">JAIN UNIVERSITY</div>
           <div className="text-lg">Department of Computer Science (Data Analytics)</div>
-          <div className="text-xl font-bold mt-2">2025</div>
+          <div className="text-xl font-bold mt-2">March 2026</div>
         </div>
       </div>
     </div>
