@@ -5,7 +5,7 @@ const Slide2 = () => {
     <div className="h-full">
       <h2 className="slide-title">INTRODUCTION</h2>
 
-      <div className="grid grid-cols-2 gap-6 h-[calc(100%-80px)]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-[calc(100%-80px)]">
         {/* Background */}
         <div className="content-box">
           <h3 className="text-2xl font-bold mb-4 underline">BACKGROUND</h3>
@@ -49,3 +49,4 @@ const Slide2 = () => {
 }
 
 export default Slide2
+

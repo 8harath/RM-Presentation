@@ -5,7 +5,7 @@ const Slide4 = () => {
     <div className="h-full">
       <h2 className="slide-title">LITERATURE REVIEW</h2>
 
-      <div className="grid grid-cols-2 gap-8 h-[calc(100%-80px)]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-[calc(100%-80px)]">
         {/* Left Column */}
         <div className="space-y-6">
           {/* Research Methodology */}
@@ -53,7 +53,7 @@ const Slide4 = () => {
 
               <div className="border-t-4 border-brutal-black pt-4 mt-6">
                 <h4 className="font-bold text-lg mb-2">KEY FOCUS AREAS:</h4>
-                <div className="grid grid-cols-2 gap-2 text-base">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-base">
                   <div className="bullet-point">Proof of Personhood</div>
                   <div className="bullet-point">Biometric Systems</div>
                   <div className="bullet-point">Behavioral Auth</div>
@@ -69,3 +69,4 @@ const Slide4 = () => {
 }
 
 export default Slide4
+

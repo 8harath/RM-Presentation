@@ -5,7 +5,7 @@ const Slide11 = () => {
     <div className="h-full">
       <h2 className="slide-title">REFERENCES</h2>
 
-      <div className="grid grid-cols-2 gap-6 h-[calc(100%-80px)]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-[calc(100%-80px)]">
         {/* Left Column */}
         <div className="content-box overflow-auto">
           <div className="space-y-4 text-base">
@@ -81,3 +81,4 @@ const Slide11 = () => {
 }
 
 export default Slide11
+

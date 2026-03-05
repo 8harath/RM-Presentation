@@ -8,12 +8,12 @@ const Slide6 = () => {
       <div className="space-y-4">
         {/* DetectGPT */}
         <div className="content-box-sm">
-          <div className="flex justify-between items-start">
+          <div className="flex flex-col md:flex-row md:justify-between items-start gap-3">
             <div className="flex-1">
               <h3 className="text-xl font-bold mb-2">1. DetectGPT (Reactive Detection)</h3>
               <p className="text-base mb-2">Statistical fingerprinting using probability curvature analysis</p>
             </div>
-            <div className="flex gap-4 text-base">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm sm:text-base">
               <span className="font-bold">✓ No training data needed</span>
               <span className="font-bold">✗ Adversarial evasion</span>
             </div>
@@ -22,12 +22,12 @@ const Slide6 = () => {
 
         {/* CAPTCHA */}
         <div className="content-box-sm">
-          <div className="flex justify-between items-start">
+          <div className="flex flex-col md:flex-row md:justify-between items-start gap-3">
             <div className="flex-1">
               <h3 className="text-xl font-bold mb-2">2. CAPTCHA (Challenge-Response)</h3>
               <p className="text-base mb-2">Cognitive-perceptual human tests</p>
             </div>
-            <div className="flex gap-4 text-base">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm sm:text-base">
               <span className="font-bold">✓ Simple, widely deployed</span>
               <span className="font-bold">✗ High friction, accessibility issues</span>
             </div>
@@ -36,12 +36,12 @@ const Slide6 = () => {
 
         {/* Worldcoin */}
         <div className="content-box-sm">
-          <div className="flex justify-between items-start">
+          <div className="flex flex-col md:flex-row md:justify-between items-start gap-3">
             <div className="flex-1">
               <h3 className="text-xl font-bold mb-2">3. Worldcoin Iris Scanning (Biometric)</h3>
               <p className="text-base mb-2">Custom "Orb" hardware captures iris patterns with zero-knowledge proofs</p>
             </div>
-            <div className="flex gap-4 text-base">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm sm:text-base">
               <span className="font-bold">✓ High accuracy, AI-safe</span>
               <span className="font-bold">✗ Privacy violations, coercive incentives</span>
             </div>
@@ -50,12 +50,12 @@ const Slide6 = () => {
 
         {/* Behavioral Biometrics */}
         <div className="content-box-sm">
-          <div className="flex justify-between items-start">
+          <div className="flex flex-col md:flex-row md:justify-between items-start gap-3">
             <div className="flex-1">
               <h3 className="text-xl font-bold mb-2">4. Behavioral Biometrics (Passive Auth)</h3>
               <p className="text-base mb-2">Typing rhythm, mouse patterns, touchscreen pressure - continuous monitoring</p>
             </div>
-            <div className="flex gap-4 text-base">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm sm:text-base">
               <span className="font-bold">✓ Seamless, invisible to user</span>
               <span className="font-bold">✗ Total surveillance, sub-perceptual control</span>
             </div>
@@ -65,17 +65,17 @@ const Slide6 = () => {
         {/* Verification Pipeline */}
         <div className="content-box mt-6">
           <h3 className="text-xl font-bold mb-4">VERIFICATION PIPELINE</h3>
-          <div className="flex justify-between items-center text-lg">
-            <div className="content-box-sm flex-1 text-center mx-2">
+          <div className="flex flex-col md:flex-row md:justify-between items-center gap-3 md:gap-2 text-base md:text-lg">
+            <div className="content-box-sm flex-1 text-center w-full md:w-auto mx-0 md:mx-2">
               <div className="font-bold">USER</div>
             </div>
             <div className="text-3xl">→</div>
-            <div className="content-box-sm flex-1 text-center mx-2">
+            <div className="content-box-sm flex-1 text-center w-full md:w-auto mx-0 md:mx-2">
               <div className="font-bold">VERIFICATION LAYER</div>
               <div className="text-sm mt-1">(Algorithm Choice)</div>
             </div>
             <div className="text-3xl">→</div>
-            <div className="content-box-sm flex-1 text-center mx-2">
+            <div className="content-box-sm flex-1 text-center w-full md:w-auto mx-0 md:mx-2">
               <div className="font-bold">ACCESS DECISION</div>
             </div>
           </div>
@@ -86,3 +86,4 @@ const Slide6 = () => {
 }
 
 export default Slide6
+

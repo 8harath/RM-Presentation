@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Slide1 from './components/slides/Slide1'
 import Slide2 from './components/slides/Slide2'
@@ -20,6 +20,7 @@ const slides = [
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [direction, setDirection] = useState(0)
+  const touchStartX = useRef(null)
 
   const nextSlide = () => {
     if (currentSlide < slides.length - 1) {
@@ -38,6 +39,29 @@ function App() {
   const goToSlide = (index) => {
     setDirection(index > currentSlide ? 1 : -1)
     setCurrentSlide(index)
+  }
+
+  const handleTouchStart = (event) => {
+    touchStartX.current = event.touches[0].clientX
+  }
+
+  const handleTouchEnd = (event) => {
+    if (touchStartX.current === null) {
+      return
+    }
+
+    const deltaX = event.changedTouches[0].clientX - touchStartX.current
+    const swipeThreshold = 60
+
+    if (Math.abs(deltaX) >= swipeThreshold) {
+      if (deltaX < 0) {
+        nextSlide()
+      } else {
+        prevSlide()
+      }
+    }
+
+    touchStartX.current = null
   }
 
   // Keyboard navigation
@@ -85,7 +109,7 @@ function App() {
   }
 
   return (
-    <div className="w-screen h-screen bg-brutal-black p-6">
+    <div className="w-screen h-[100dvh] bg-brutal-black p-2 sm:p-4 md:p-6">
       {/* Slide Container */}
       <div className="h-full relative overflow-hidden">
         <AnimatePresence initial={false} custom={direction} mode="wait">
@@ -103,20 +127,73 @@ function App() {
               rotateY: { duration: 0.3, ease: 'easeInOut' },
             }}
             className="absolute inset-0"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
           >
-            <div className="slide-container h-full w-full p-8 overflow-auto">
+            <div className="slide-container h-full w-full p-4 sm:p-6 md:p-8 overflow-auto pb-28 md:pb-8">
               <CurrentSlideComponent />
             </div>
           </motion.div>
         </AnimatePresence>
 
         {/* Slide Counter - Neobrutalism Style */}
-        <div className="absolute top-8 right-8 slide-counter">
+        <div className="absolute top-3 right-3 sm:top-4 sm:right-4 md:top-8 md:right-8 slide-counter">
           {currentSlide + 1}/{slides.length}
         </div>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex absolute bottom-8 left-8 gap-4 z-30">
+          <button
+            type="button"
+            className="nav-button"
+            onClick={prevSlide}
+            disabled={currentSlide === 0}
+            aria-label="Go to previous slide"
+          >
+            Previous
+          </button>
+          <button
+            type="button"
+            className="nav-button"
+            onClick={nextSlide}
+            disabled={currentSlide === slides.length - 1}
+            aria-label="Go to next slide"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      <div className="mobile-nav-bar md:hidden">
+        <button
+          type="button"
+          className="nav-button nav-button-mobile"
+          onClick={prevSlide}
+          disabled={currentSlide === 0}
+          aria-label="Go to previous slide"
+        >
+          Previous
+        </button>
+
+        <div className="mobile-nav-status">
+          <span className="mobile-nav-label">Slide</span>
+          <span>{currentSlide + 1} of {slides.length}</span>
+        </div>
+
+        <button
+          type="button"
+          className="nav-button nav-button-mobile"
+          onClick={nextSlide}
+          disabled={currentSlide === slides.length - 1}
+          aria-label="Go to next slide"
+        >
+          Next
+        </button>
       </div>
     </div>
   )
 }
 
 export default App
+

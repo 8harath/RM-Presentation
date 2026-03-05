@@ -15,7 +15,7 @@ const Slide3 = () => {
       </div>
 
       {/* Three Boxes Row */}
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Research Gap */}
         <div className="content-box">
           <h3 className="text-xl font-bold mb-3 underline">RESEARCH GAP</h3>
@@ -59,3 +59,4 @@ const Slide3 = () => {
 }
 
 export default Slide3
+

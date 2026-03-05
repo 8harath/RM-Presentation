@@ -5,7 +5,7 @@ const Slide8 = () => {
     <div className="h-full">
       <h2 className="slide-title">THE TRILEMMA (OUR CONTRIBUTION)</h2>
 
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left: Triangle Diagram */}
         <div className="content-box flex flex-col items-center justify-center">
           <h3 className="text-2xl font-bold mb-8 text-center">
@@ -13,7 +13,7 @@ const Slide8 = () => {
           </h3>
 
           {/* Triangle */}
-          <div className="relative w-full h-80 flex items-center justify-center">
+          <div className="relative w-full h-64 sm:h-80 flex items-center justify-center">
             {/* Top vertex */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 content-box-sm">
               <div className="font-bold text-lg">VERIFICATION</div>
@@ -107,3 +107,4 @@ const Slide8 = () => {
 }
 
 export default Slide8
+

@@ -57,7 +57,7 @@ const Slide7 = () => {
         </table>
 
         {/* Legend */}
-        <div className="mt-4 flex gap-6 text-lg justify-center border-t-3 border-brutal-black pt-4">
+        <div className="mt-4 flex flex-wrap gap-4 text-base sm:text-lg justify-center border-t-3 border-brutal-black pt-4">
           <div><span className="font-bold">⚫</span> High/Good</div>
           <div><span className="font-bold">⚪</span> Medium</div>
           <div><span className="font-bold">⬤</span> Critical Risk</div>
@@ -65,7 +65,7 @@ const Slide7 = () => {
       </div>
 
       {/* Key Findings */}
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="content-box">
           <h3 className="text-xl font-bold mb-3 underline">METRICS EVALUATED</h3>
           <div className="space-y-2">
@@ -91,3 +91,4 @@ const Slide7 = () => {
 }
 
 export default Slide7
+

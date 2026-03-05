@@ -6,7 +6,7 @@ const Slide5 = () => {
       <h2 className="slide-title">OVERVIEW OF EXISTING WORK</h2>
 
       {/* Approaches Circle */}
-      <div className="grid grid-cols-5 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
         <div className="content-box-sm text-center">
           <div className="text-xl font-bold">REACTIVE DETECTION</div>
           <div className="text-sm mt-2">AI detecting AI outputs</div>
@@ -67,7 +67,7 @@ const Slide5 = () => {
       {/* Trends */}
       <div className="content-box">
         <h3 className="text-2xl font-bold mb-3">TRENDS IN PREVIOUS RESEARCH</h3>
-        <div className="flex justify-between items-center text-xl">
+        <div className="flex flex-col md:flex-row md:justify-between items-center gap-3 md:gap-0 text-base sm:text-lg md:text-xl">
           <div className="font-bold">Content Detection</div>
           <div className="text-3xl">→</div>
           <div className="font-bold">Identity Verification</div>
@@ -80,3 +80,4 @@ const Slide5 = () => {
 }
 
 export default Slide5
+

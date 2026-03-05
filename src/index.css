@@ -24,31 +24,31 @@
   }
 
   .content-box {
-    @apply bg-brutal-white border-4 border-brutal-black p-6;
+    @apply bg-brutal-white border-4 border-brutal-black p-4 sm:p-5 md:p-6;
   }
 
   .content-box-sm {
-    @apply bg-brutal-white border-3 border-brutal-black p-4;
+    @apply bg-brutal-white border-3 border-brutal-black p-3 sm:p-4;
   }
 
   .slide-title {
-    @apply text-slide-title font-black uppercase border-b-6 border-brutal-black pb-3 mb-6;
+    @apply text-3xl sm:text-4xl md:text-slide-title font-black uppercase border-b-6 border-brutal-black pb-3 mb-4 md:mb-6;
   }
 
   .slide-subtitle {
-    @apply text-slide-subtitle font-bold mb-4;
+    @apply text-xl sm:text-2xl md:text-slide-subtitle font-bold mb-4;
   }
 
   .slide-body {
-    @apply text-slide-body;
+    @apply text-base sm:text-lg md:text-slide-body;
   }
 
   .bullet-point {
-    @apply relative pl-6 mb-2;
+    @apply relative pl-5 sm:pl-6 mb-2;
   }
 
   .bullet-point::before {
-    content: "■";
+    content: "\25A0";
     @apply absolute left-0 font-bold text-brutal-black;
   }
 
@@ -60,7 +60,7 @@
 
   .table-brutalist th,
   .table-brutalist td {
-    @apply border-2 border-brutal-black p-3 text-left;
+    @apply border-2 border-brutal-black p-2 sm:p-3 text-left;
   }
 
   .table-brutalist th {
@@ -69,12 +69,41 @@
 
   /* Navigation Buttons */
   .nav-button {
-    @apply bg-brutal-white border-4 border-brutal-black px-6 py-3 font-bold uppercase cursor-pointer transition-all duration-200 hover:shadow-brutal-sm active:translate-x-1 active:translate-y-1 active:shadow-none;
+    @apply bg-brutal-white border-4 border-brutal-black px-4 sm:px-6 py-3 font-bold uppercase text-sm sm:text-base cursor-pointer transition-all duration-200 hover:shadow-brutal-sm active:translate-x-1 active:translate-y-1 active:shadow-none disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-none disabled:translate-x-0 disabled:translate-y-0;
+  }
+
+  .nav-button-mobile {
+    min-width: 110px;
+    flex: 1 1 0;
+  }
+
+  .mobile-nav-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: #000000;
+    border-top: 3px solid #ffffff;
+  }
+
+  .mobile-nav-status {
+    @apply bg-brutal-white text-brutal-black border-4 border-brutal-black px-3 py-2 text-sm font-black uppercase text-center leading-tight;
+    min-width: 108px;
+    box-shadow: 4px 4px 0 #000000;
+  }
+
+  .mobile-nav-label {
+    @apply block text-xs font-bold opacity-70;
   }
 
   /* Slide Counter */
   .slide-counter {
-    @apply bg-brutal-white text-brutal-black border-4 border-brutal-black px-6 py-3 font-mono font-black text-2xl shadow-brutal;
+    @apply bg-brutal-white text-brutal-black border-4 border-brutal-black px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 font-mono font-black text-sm sm:text-lg md:text-2xl shadow-brutal-sm md:shadow-brutal;
   }
 }
 
@@ -110,3 +139,53 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .table-brutalist {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-brutalist th,
+  .table-brutalist td {
+    min-width: 150px;
+  }
+
+  .slide-container .text-6xl {
+    font-size: 2.25rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .slide-container .text-5xl {
+    font-size: 2rem !important;
+    line-height: 1.15 !important;
+  }
+
+  .slide-container .text-4xl {
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .slide-container .text-3xl {
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .slide-container .text-2xl {
+    font-size: 1.25rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .slide-container .text-xl {
+    font-size: 1.1rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .slide-container .text-lg {
+    font-size: 1rem !important;
+    line-height: 1.4 !important;
+  }
+}
+
