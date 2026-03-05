@@ -14,8 +14,8 @@ const Slide6 = () => {
               <p className="text-base mb-2">Statistical fingerprinting using probability curvature analysis</p>
             </div>
             <div className="flex gap-4 text-base">
-              <span className="font-bold">✓ No training data needed</span>
-              <span className="font-bold">✗ Adversarial evasion</span>
+              <span className="font-bold">+ No training data needed</span>
+              <span className="font-bold">- Vulnerable to adversarial evasion</span>
             </div>
           </div>
         </div>
@@ -25,11 +25,11 @@ const Slide6 = () => {
           <div className="flex justify-between items-start">
             <div className="flex-1">
               <h3 className="text-xl font-bold mb-2">2. CAPTCHA (Challenge-Response)</h3>
-              <p className="text-base mb-2">Cognitive-perceptual human tests</p>
+              <p className="text-base mb-2">Cognitive-perceptual human tests for bot filtering</p>
             </div>
             <div className="flex gap-4 text-base">
-              <span className="font-bold">✓ Simple, widely deployed</span>
-              <span className="font-bold">✗ High friction, accessibility issues</span>
+              <span className="font-bold">+ Simple and widely deployed</span>
+              <span className="font-bold">- High friction and accessibility issues</span>
             </div>
           </div>
         </div>
@@ -39,11 +39,11 @@ const Slide6 = () => {
           <div className="flex justify-between items-start">
             <div className="flex-1">
               <h3 className="text-xl font-bold mb-2">3. Worldcoin Iris Scanning (Biometric)</h3>
-              <p className="text-base mb-2">Custom "Orb" hardware captures iris patterns with zero-knowledge proofs</p>
+              <p className="text-base mb-2">Custom orb hardware captures iris patterns with proof of uniqueness</p>
             </div>
             <div className="flex gap-4 text-base">
-              <span className="font-bold">✓ High accuracy, AI-safe</span>
-              <span className="font-bold">✗ Privacy violations, coercive incentives</span>
+              <span className="font-bold">+ High verification confidence</span>
+              <span className="font-bold">- Privacy and consent concerns</span>
             </div>
           </div>
         </div>
@@ -53,28 +53,28 @@ const Slide6 = () => {
           <div className="flex justify-between items-start">
             <div className="flex-1">
               <h3 className="text-xl font-bold mb-2">4. Behavioral Biometrics (Passive Auth)</h3>
-              <p className="text-base mb-2">Typing rhythm, mouse patterns, touchscreen pressure - continuous monitoring</p>
+              <p className="text-base mb-2">Typing rhythm, mouse movement, and touch behavior monitoring</p>
             </div>
             <div className="flex gap-4 text-base">
-              <span className="font-bold">✓ Seamless, invisible to user</span>
-              <span className="font-bold">✗ Total surveillance, sub-perceptual control</span>
+              <span className="font-bold">+ Seamless user experience</span>
+              <span className="font-bold">- Continuous surveillance risk</span>
             </div>
           </div>
         </div>
 
         {/* Verification Pipeline */}
         <div className="content-box mt-6">
-          <h3 className="text-xl font-bold mb-4">VERIFICATION PIPELINE</h3>
+          <h3 className="text-xl font-bold mb-4">ALGORITHM PIPELINE (BLOCK DIAGRAM)</h3>
           <div className="flex justify-between items-center text-lg">
             <div className="content-box-sm flex-1 text-center mx-2">
-              <div className="font-bold">USER</div>
+              <div className="font-bold">USER INPUT</div>
             </div>
-            <div className="text-3xl">→</div>
+            <div className="text-3xl">-&gt;</div>
             <div className="content-box-sm flex-1 text-center mx-2">
-              <div className="font-bold">VERIFICATION LAYER</div>
-              <div className="text-sm mt-1">(Algorithm Choice)</div>
+              <div className="font-bold">VERIFICATION ALGORITHM</div>
+              <div className="text-sm mt-1">(Method Choice)</div>
             </div>
-            <div className="text-3xl">→</div>
+            <div className="text-3xl">-&gt;</div>
             <div className="content-box-sm flex-1 text-center mx-2">
               <div className="font-bold">ACCESS DECISION</div>
             </div>

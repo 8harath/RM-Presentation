@@ -20,69 +20,62 @@ const Slide7 = () => {
           <tbody>
             <tr>
               <td className="font-bold">CAPTCHA</td>
-              <td>⚫ Low</td>
-              <td>⚪ Medium</td>
-              <td>⚫ Low</td>
+              <td>Low</td>
+              <td>Medium</td>
+              <td>Low</td>
               <td>Cognitive overload</td>
             </tr>
             <tr>
               <td className="font-bold">Worldcoin</td>
-              <td>⚫ High</td>
-              <td>⚫ High</td>
-              <td className="font-bold">⬤ Very High</td>
-              <td>Invalid consent</td>
+              <td>High</td>
+              <td>High</td>
+              <td>Very High</td>
+              <td>Invalid consent concerns</td>
             </tr>
             <tr>
               <td className="font-bold">Social PoP</td>
-              <td>⚫ Low</td>
-              <td>⚪ Medium</td>
-              <td>⚪ Medium</td>
+              <td>Low</td>
+              <td>Medium</td>
+              <td>Medium</td>
               <td>Social manipulation</td>
             </tr>
             <tr>
               <td className="font-bold">Behavioral</td>
-              <td>⚫ Very High</td>
-              <td>⚫ High</td>
-              <td className="font-bold">⬤ Very High</td>
+              <td>Very High</td>
+              <td>High</td>
+              <td>Very High</td>
               <td>Sub-perceptual surveillance</td>
             </tr>
             <tr>
               <td className="font-bold">Reputational</td>
-              <td>⚪ Medium</td>
-              <td>⚪ Medium</td>
-              <td>⚪ Medium</td>
-              <td>Chilling effect on speech</td>
+              <td>Medium</td>
+              <td>Medium</td>
+              <td>Medium</td>
+              <td>Adoption complexity</td>
             </tr>
           </tbody>
         </table>
-
-        {/* Legend */}
-        <div className="mt-4 flex gap-6 text-lg justify-center border-t-3 border-brutal-black pt-4">
-          <div><span className="font-bold">⚫</span> High/Good</div>
-          <div><span className="font-bold">⚪</span> Medium</div>
-          <div><span className="font-bold">⬤</span> Critical Risk</div>
-        </div>
       </div>
 
-      {/* Key Findings */}
+      {/* Insights */}
       <div className="grid grid-cols-2 gap-6">
         <div className="content-box">
-          <h3 className="text-xl font-bold mb-3 underline">METRICS EVALUATED</h3>
+          <h3 className="text-xl font-bold mb-3 underline">METRICS USED FOR COMPARISON</h3>
           <div className="space-y-2">
-            <div className="bullet-point"><strong>Usability:</strong> User friction, cognitive load</div>
-            <div className="bullet-point"><strong>Verification:</strong> Sybil-resistance, accuracy</div>
-            <div className="bullet-point"><strong>Freewill Risk:</strong> Privacy invasion, coercion</div>
-            <div className="bullet-point"><strong>Compliance:</strong> Legal/ethical validity</div>
+            <div className="bullet-point"><strong>Usability:</strong> User friction and cognitive load</div>
+            <div className="bullet-point"><strong>Verification:</strong> Accuracy and Sybil-resistance</div>
+            <div className="bullet-point"><strong>Freewill Risk:</strong> Privacy, autonomy, coercion</div>
+            <div className="bullet-point"><strong>Compliance:</strong> Legal and ethical validity</div>
           </div>
         </div>
 
         <div className="content-box bg-brutal-black text-brutal-white">
-          <h3 className="text-xl font-bold mb-3 underline">KEY FINDINGS</h3>
+          <h3 className="text-xl font-bold mb-3 underline">SIMILARITIES & DIFFERENCES</h3>
           <div className="space-y-2">
-            <div className="bullet-point">No methodology optimizes all three dimensions</div>
-            <div className="bullet-point">Seamless systems sacrifice privacy</div>
-            <div className="bullet-point">Privacy-preserving systems impose high friction</div>
-            <div className="bullet-point">Biometric systems face severe legal challenges</div>
+            <div className="bullet-point"><strong>Similarity:</strong> Every method has a clear trade-off profile</div>
+            <div className="bullet-point"><strong>Similarity:</strong> No method optimizes all three core dimensions</div>
+            <div className="bullet-point"><strong>Difference:</strong> Friction-heavy methods protect agency better</div>
+            <div className="bullet-point"><strong>Difference:</strong> Seamless methods often increase surveillance risk</div>
           </div>
         </div>
       </div>
