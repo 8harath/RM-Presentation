@@ -27,7 +27,7 @@ const Slide1 = () => {
       <div className="text-xl mb-4 text-center">
         <span className="font-bold">Team - 163</span>
         <br />
-        <span className="text-lg">Bharath K • Lochan S • David Matikke Fonteh</span>
+        <span className="text-lg">Bharath K | Lochan S | David Matikke Fonteh</span>
       </div>
 
       {/* University Info */}
@@ -43,3 +43,4 @@ const Slide1 = () => {
 }
 
 export default Slide1
+

@@ -3,7 +3,7 @@ import React from 'react'
 const Slide3 = () => {
   return (
     <div className="h-full">
-      <h2 className="slide-title">PROBLEM STATEMENT</h2>
+      <h2 className="slide-title">PROBLEM STATEMENT & MOTIVATION</h2>
 
       {/* Main Crisis Box */}
       <div className="content-box mb-6">
@@ -36,7 +36,7 @@ const Slide3 = () => {
               <div className="font-bold text-xl mb-2">NEED:</div>
               <div>Verify humanity in digital spaces</div>
             </div>
-            <div className="text-center text-3xl">⇅</div>
+            <div className="text-center text-3xl font-black">VS</div>
             <div className="text-center">
               <div className="font-bold text-xl mb-2">RISK:</div>
               <div>Sacrifice privacy, agency & autonomy</div>
@@ -59,3 +59,4 @@ const Slide3 = () => {
 }
 
 export default Slide3
+

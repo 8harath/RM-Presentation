@@ -34,9 +34,9 @@ const Slide10 = () => {
                   <div className="bullet-point">Surveyed 27 peer-reviewed sources across multiple disciplines</div>
                   <div className="bullet-point">Identified three incompatible definitions of "Proof of Personhood":
                     <div className="ml-6 mt-1">
-                      <div>• Social consensus (PoH)</div>
-                      <div>• Biological uniqueness (Worldcoin)</div>
-                      <div>• Verified reputation (VeriTrust)</div>
+                      <div>- Social consensus (PoH)</div>
+                      <div>- Biological uniqueness (Worldcoin)</div>
+                      <div>- Verified reputation (VeriTrust)</div>
                     </div>
                   </div>
                 </div>
@@ -103,3 +103,4 @@ const Slide10 = () => {
 }
 
 export default Slide10
+
