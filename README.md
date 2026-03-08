@@ -36,6 +36,7 @@ This presentation follows **Neo-Brutalism** design principles:
    git clone <repository-url>
    cd RM-Presentation
    ```
+   Stuff that i do !
 
 2. **Install dependencies:**
    ```bash
